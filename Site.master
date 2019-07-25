@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.5.2.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Molengo_400.font.js"></script>
+<script type="text/javascript" src="js/Expletus_Sans_400.font.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5.js"></script>
+<style type="text/css">.bg, .box2{behavior:url("js/PIE.htc");}</style>
+    <title></title>
+ 
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- header -->
+    </head>
+<body id="page1">
+    <form runat="server">
+
+<div class="body1">
+  <div class="main">
+      <div class="wrapper">
+        
+          <ul id="menu">
+            <li><a href="Default.aspx">Home</a></li>
+            <li><a href="Users.aspx">Users</a></li>
+            <li><a href="Tracking.aspx">Tracking</a></li>
+            <li><a href="Driver.aspx">Driver</a></li>
+           
+            <li class="end"><a href="contact.aspx">Contact Us</a></li>
+          </ul>
+      
+        <ul id="icon">
+          <li><a href="http://www.facebook.com"><img src="images/icon1.jpg" alt=""></a></li>
+         
+          <li><a href="http://twitter.com"><img src="images/icon3.jpg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="wrapper">
+        <h1><a href="Default.aspx" id="logo">Vehicle Tracking System</a></h1>
+      </div>
+      <div id="slogan"> We will track you<span>where you are!</span> </div>
+      <div class="banners">
+        <%--<li><a href="#"><img src="images/banner7.jpg" alt=""></a></li>--%>
+        <%--<li><a href="#"><img src="images/banner2.jpg" alt=""></a></li>--%>
+        
+      </div>
+  
+    <!-- / header -->
+  </div>
+</div>
+<div class="body2">
+  <div class="main">
+    <!-- content -->
+    <div id="content">
+      <div class="wrapper">
+        <div class="pad1 pad_top1">
+          <article class="cols marg_right1">
+            <figure><a href="#"><img src="images/stack.jpg" alt=""></a></figure>
+            <span class="font1">Hardware Used</span> </article>
+          <article class="cols marg_right1">
+            <figure><a href="#"><img src="images/ard.jpg" alt=""></a></figure>
+            <span class="font1">Hardware Programming</span> </article>
+          <article class="cols">
+            <figure><a href="#"><img src="images/soft.jpg" alt=""></a></figure>
+            <span class="font1">Software Programming</span> </article>
+        </div>
+      </div>
+       <div class="box1">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div>
+      
+            <div class="wrapper">
+              <div class="call"> <span class="call1">Help: </span><span class="call2">+92-300-4961001</span> </div>
+              <div class="col_4 pad_left2">Copyright &copy; <a href="http://www.uettaxila.edu.pk">UET Taxila</a>          All Rights Reserved<br>
+                Design by <a>Waqas Ahmad, Muhammad Javaid, Ghazanfar Ali</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / footer -->
+  </div>
+</div>
+<script type="text/javascript">Cufon.now();</script>
+
+    </form>
+</body>
+</html>
